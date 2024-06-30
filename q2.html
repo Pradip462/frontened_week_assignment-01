@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="./8c1ca88a053554c6421e9a430e8d64ca.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact {
+        padding: 10px;
+    }
+    .i-logo {
+        width: 50px;
+    }
+    .form-section {
+            /* border-top: 1px solid #000; */
+            padding: 10px;
+        }
+        .form-section form {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+        }
+        .form-section form label {
+            align-self: center;
+        }
+    .form-section form input[type="text"],
+    .form-section form input[type="email"] {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .form-section form .checkbox {
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+        }
+        .form-section form .checkbox input {
+            margin-right: 10px;
+        }
+        .form-section form .submit {
+            grid-column: span 2;
+            display: flex;
+            justify-content: center;
+        }
+        .form-section form .submit input {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            font-size: small;
+            padding: 10px;
+            /* border-top: 1px solid #000; */
+        }
+</style>
+<body>
+    <div class="header">
+        <div >
+            <img src="./8c1ca88a053554c6421e9a430e8d64ca.png" alt="the-indian-express-logo" class="i-logo">
+        </div>
+        <div>
+            <h1>The Indian <b>EXPRESS</b></h1>
+        </div>
+        <div class="contact">
+            <h2>Contacts</h2>
+        </div>
+    </div>
+    <main>
+        <div>
+            <p>The 2007 ICC World Twenty20, held in South Africa, marked a significant milestone in Indian cricket history as the national team clinched their first-ever T20 World Cup title. Under the dynamic leadership of MS Dhoni, a relatively young and inexperienced Indian side defied all odds to emerge victorious in this inaugural tournament. The journey to the title was a thrilling rollercoaster, filled with memorable performances and nail-biting finishes. The highlight of the tournament was undoubtedly the final against arch-rivals Pakistan. Held at the iconic Wanderers Stadium in Johannesburg, the match was a showcase of T20 cricket at its best. Batting first, India posted a competitive total of 157 runs, thanks to Gautam Gambhir's superb knock of 75 runs off 54 balls. In response, Pakistan's chase was fiercely contested, with Misbah-ul-Haq playing a lone hand to keep his team in the hunt. However, in a dramatic turn of events, Misbah's attempted scoop shot off Joginder Sharma in the final over landed in the hands of Sreesanth at short fine-leg, sealing a five-run victory for India. This triumph not only ignited celebrations across the nation but also marked the beginning of a new era for Indian cricket. The young brigade, including future stars like Yuvraj Singh, who famously hit six sixes in an over against England, and Rohit Sharma, who made crucial contributions throughout the tournament, demonstrated the depth and potential of Indian cricket. The 2007 T20 World Cup win remains etched in the hearts of millions of Indian fans as a testament to the team's resilience, unity, and never-say-die spirit, laying the foundation for future successes on the global stage.</p>
+        </div>
+        <div class="form-section">
+            <h1>Form</h1>
+            <form>
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email">
+
+                <label for="genre">FAVOURITE GENRE</label>
+                <input list="browsers" id="genre">
+                <datalist id="browsers">
+                  <option value="Action">
+                  <option value="Thriller">
+                  <option value="Romantic">
+                  <option value="Fiction">
+                  <option value="Mystery">
+                </datalist>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">SUBSCRIBE TO OUR NEWSLETTER VIA EMAIL</label>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        FOOTER TEXT IN SMALL<br>
+        ALL RIGHTS RESERVED
+    </footer>
+</body>
+</html>
